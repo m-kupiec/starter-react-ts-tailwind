@@ -1,19 +1,19 @@
 {
   "name": "starter-app-react-ts-tailwind",
   "private": true,
-  "version": "1.0.27",
+  "version": "1.0.28",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "types": "tsc --project tsconfig.app.json",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "preview": "vite preview",
+    "lint": "eslint .",
+    "types": "tsc --project tsconfig.app.json",
     "test": "vitest",
     "test:ui": "vitest --ui",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "dev": "vite",
+    "preview": "vite preview",
+    "build": "tsc -b && vite build"
   },
   "dependencies": {
     "react": "^18.3.1",
