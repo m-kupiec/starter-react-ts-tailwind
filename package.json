@@ -1,7 +1,7 @@
 {
   "name": "starter-app-react-ts-tailwind",
   "private": true,
-  "version": "1.0.21",
+  "version": "1.0.22",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -34,6 +34,7 @@
     "eslint-plugin-react-refresh": "^0.4.9",
     "globals": "^15.9.0",
     "jsdom": "^25.0.0",
+    "msw": "^2.4.2",
     "postcss": "^8.4.45",
     "prettier": "3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.6",
