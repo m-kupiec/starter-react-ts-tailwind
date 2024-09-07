@@ -176,6 +176,18 @@ PostCSS can be configured in `postcss.config.js`. By default, it uses Tailwind C
 
 To keep line endings consistent across different development environments, [EditorConfig](https://editorconfig.org) is set to use LF. You can change the configuration in `.editorconfig`.
 
+### VS Code
+
+Visual Studio Code has some workspace settings added by default. These set Prettier as the default formatter and make the editor always open `.css` files in [Tailwind CSS mode](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss#files.associations). You can change these settings in `.vscode/setttings.json`.
+
+You can also add the following to your [global VS Code user settings](https://code.visualstudio.com/docs/getstarted/settings#_settingsjson) to automatically format files with Prettier:
+
+```json
+"editor.formatOnPaste": true,
+"editor.formatOnSave": true,
+"editor.formatOnType": true
+```
+
 ### Git
 
 Line endings are set to LF in `.gitattributes`. Files to be [ignored by Git](https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository#_ignoring) can be specified in `.gitignore`.
