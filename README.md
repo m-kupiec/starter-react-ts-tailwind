@@ -11,6 +11,13 @@ A skeleton for getting started quickly with web application development using:
 
 I made it for myself to avoid repeating the same tasks over and over again when starting new side projects. Feel free to use it in its entirety or just for inspiration.
 
+## Quick Start
+
+1. Get the repository to start your new project.
+2. Run `npm install` in your project directory to install the dependencies.
+3. Run `npm run dev` to start the development server.
+4. Start building your application in `src/App.tsx`.
+
 ## Installation
 
 ### Packages
