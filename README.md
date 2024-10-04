@@ -1,15 +1,16 @@
-# React/TypeScript/Tailwind App Starter
+# Starter App for React, TypeScript, and Tailwind
 
 ## Overview
 
-A skeleton for getting started quickly with web application development using:
+This is a starter app built with [React](https://react.dev), [TypeScript](https://www.typescriptlang.org), and [Tailwind CSS](https://tailwindcss.com). It serves as a foundation for building scalable and maintainable web applications.
 
-- [React](https://react.dev), [Tailwind CSS](https://tailwindcss.com)
-- Static analysis: [Prettier](https://prettier.io), [ESLint](https://eslint.org), [TypeScript](https://www.typescriptlang.org)
-- Testing: [Vitest](https://vitest.dev), [Testing Library](https://testing-library.com), [Mock Service Worker](https://mswjs.io)
-- Build process: [Vite](https://vitejs.dev), [PostCSS](https://postcss.org)
+Tooling:
 
-I made it for myself to avoid repeating the same tasks over and over again when starting new side projects. Feel free to use it in its entirety or just for inspiration.
+- **Static analysis**: [TypeScript](https://www.typescriptlang.org), [ESLint](https://eslint.org), [Prettier](https://prettier.io)
+- **Testing**: [Vitest](https://vitest.dev), [Testing Library](https://testing-library.com), [Mock Service Worker](https://mswjs.io)
+- **Build process**: [Vite](https://vitejs.dev), [PostCSS](https://postcss.org)
+
+I built this app for myself to avoid repeating the same tasks over and over again when starting new side projects. Feel free to use it in its entirety or just for inspiration.
 
 ## Quick Start
 
@@ -22,9 +23,15 @@ I made it for myself to avoid repeating the same tasks over and over again when 
 
 ### Packages
 
-**Note:** The projects requires Node.js version 18+ or 20+.
+**Note:** The project requires Node.js version 18+ or 20+.
 
-After you fork/clone/download the repository, install all the npm packages into your project folder:
+After you clone or download the repository, navigate to the project's folder:
+
+```bash
+cd starter-app-react-ts-tailwind
+```
+
+Then install the dependencies:
 
 ```bash
 npm install
@@ -45,11 +52,7 @@ If you are using [Visual Studio Code](https://code.visualstudio.com), you will b
 
 ### Development
 
-To start developing your React/TypeScript application, go to `src/App.tsx`.
-
-You can use the [Tailwind classes](https://tailwindcss.com/docs/utility-first) right away.
-
-You can start [describing the network](https://mswjs.io/docs/getting-started#step-2-describe) using the [MSW request handlers](https://mswjs.io/docs/concepts/request-handler) in `src/tests/mocks/handlers.ts`. The [MSW/Node.js integration module](https://mswjs.io/docs/getting-started#step-3-integrate) (`src/tests/mocks/server.ts`) is already started in `vitest.setup.ts`.
+To start developing your React/TypeScript application, go to `src/App.tsx`. You can use the [Tailwind classes](https://tailwindcss.com/docs/utility-first) right away.
 
 ### Static Analysis
 
@@ -78,6 +81,14 @@ npm run types
 ```
 
 ### Testing
+
+#### Writing Tests
+
+A sample unit test for the `App` component has been included. You can find it in `src/App.test.tsx`.
+
+You can start [describing the network](https://mswjs.io/docs/getting-started#step-2-describe) using the [MSW request handlers](https://mswjs.io/docs/concepts/request-handler) in `src/tests/mocks/handlers.ts`. The [MSW/Node.js integration module](https://mswjs.io/docs/getting-started#step-3-integrate) (`src/tests/mocks/server.ts`) is already started in `vitest.setup.ts`.
+
+#### Running Tests
 
 To run all tests and view the results in the terminal:
 
@@ -123,7 +134,7 @@ npm run build
 
 Tailwind CSS is installed as a PostCSS plugin (see `postcss.config.js`) and configured to process the contents of the root `index.html` and all `.ts/.tsx` files in the `src` directory. No [customizations](https://tailwindcss.com/docs/configuration) are provided by default. You can change the configuration in `tailwind.config.js`.
 
-Any additional plugins (like [tailwindcss-typography](https://github.com/tailwindlabs/tailwindcss-typographyhttps://github.com/tailwindlabs/tailwindcss-typography), [tailwindcss-forms](https://github.com/tailwindlabs/tailwindcss-forms), [tailwindcss-aspect-ratio](https://github.com/tailwindlabs/tailwindcss-aspect-ratio), or [tailwindcss-container-queries](https://github.com/tailwindlabs/tailwindcss-container-queries)) can also be added in `tailwind.config.js`.
+Any additional plugins (like [tailwindcss-typography](https://github.com/tailwindlabs/tailwindcss-typography), [tailwindcss-forms](https://github.com/tailwindlabs/tailwindcss-forms), [tailwindcss-aspect-ratio](https://github.com/tailwindlabs/tailwindcss-aspect-ratio), or [tailwindcss-container-queries](https://github.com/tailwindlabs/tailwindcss-container-queries)) can also be added in `tailwind.config.js`.
 
 Tailwind's [base styles](https://tailwindcss.com/docs/preflight) and the other two layers are included by default (see `src/index.css`).
 
@@ -131,7 +142,7 @@ Tailwind's [base styles](https://tailwindcss.com/docs/preflight) and the other t
 
 Prettier uses the default configuration. It also has the [prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss) plugin enabled to automatically sort classes based on [Tailwind's recommended class order](https://tailwindcss.com/blog/automatic-class-sorting-with-prettier#how-classes-are-sorted). You can change the configuration in `.prettierrc`.
 
-Ingored files (not to be formatted) can be specified in `.prettierignore`. According to its [documentation](https://prettier.io/docs/en/ignore), Prettier also respects the `.gitignore` configuration and ignores `node_modules/`.
+Ignored files (not to be formatted) can be specified in `.prettierignore`. According to its [documentation](https://prettier.io/docs/en/ignore), Prettier also respects the `.gitignore` configuration and ignores `node_modules/`.
 
 ### ESLint
 
@@ -147,7 +158,7 @@ You can see the details and tweak the configuration to your needs in `eslint.con
 
 ### TypeScript
 
-By default, all `.ts/.tsx` files in the `src` directory are included for analysis. Strict type checking and several linting options are enabled to catch unused local variables or function parameters and to prevent unsafe `switch` cases. The configuration ensures that the code complies with the JavaScript features supported by the ES2020.
+By default, all `.ts/.tsx` files in the `src` directory are included for analysis. Strict type checking and several linting options are enabled to catch unused local variables or function parameters and to prevent unsafe `switch` cases. The configuration ensures that the code complies with the JavaScript features supported by ES2020.
 
 The compiler won't emit JavaScript files, leaving that responsibility to Vite.
 
