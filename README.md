@@ -49,7 +49,7 @@ To start developing your React/TypeScript application, go to `src/App.tsx`.
 
 You can use the [Tailwind classes](https://tailwindcss.com/docs/utility-first) right away.
 
-You can start [describing the network](https://mswjs.io/docs/getting-started#step-2-describe) using the [MSW request handlers](https://mswjs.io/docs/concepts/request-handler) in `src/mocks/handlers.ts`. The [MSW/Node.js integration module](https://mswjs.io/docs/getting-started#step-3-integrate) (`src/mocks/node.ts`) is already started in `vitest.setup.ts`.
+You can start [describing the network](https://mswjs.io/docs/getting-started#step-2-describe) using the [MSW request handlers](https://mswjs.io/docs/concepts/request-handler) in `src/tests/mocks/handlers.ts`. The [MSW/Node.js integration module](https://mswjs.io/docs/getting-started#step-3-integrate) (`src/tests/mocks/server.ts`) is already started in `vitest.setup.ts`.
 
 ### Static Analysis
 
@@ -159,7 +159,7 @@ By default, Vitest is configured to use the [@vitejs/plugin-react](https://githu
 
 ### Mock Service Worker
 
-The [MSW/Node.js integration module](https://mswjs.io/docs/getting-started#step-3-integrate) (`src/mocks/node.ts`) is handled in `vitest.setup.ts`.
+The [MSW/Node.js integration module](https://mswjs.io/docs/getting-started#step-3-integrate) (`src/tests/mocks/server.ts`) is handled in `vitest.setup.ts`.
 
 ### Vite
 
