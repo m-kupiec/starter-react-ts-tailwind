@@ -39,6 +39,7 @@ If you are using [Visual Studio Code](https://code.visualstudio.com), you will b
 - [Formatting Toggle](https://marketplace.visualstudio.com/items?itemName=tombonnike.vscode-status-bar-format-toggle)
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [Vitest](https://marketplace.visualstudio.com/items?itemName=vitest.explorer)
+- [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
 
 ## Usage
 
