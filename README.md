@@ -157,10 +157,6 @@ You can change the configuration in `tsconfig.app.json`.
 
 By default, Vitest is configured to use the [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react) plugin to handle React's JSX syntax. It also uses [jsdom](https://github.com/jsdom/jsdom) as its testing environment. You can change the configuration in `vitest.config.ts`.
 
-### Testing Library
-
-The React trees mounted with `render` are by default unmounted after each test. You can change the setup in `vitest.setup.ts`.
-
 ### Mock Service Worker
 
 The [MSW/Node.js integration module](https://mswjs.io/docs/getting-started#step-3-integrate) (`src/mocks/node.ts`) is handled in `vitest.setup.ts`.
