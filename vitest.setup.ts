@@ -1,3 +1,4 @@
+import "./src/index.css";
 import { server } from "./src/tests/mocks/server.ts";
 import { afterEach, beforeAll, afterAll } from "vitest";
 
