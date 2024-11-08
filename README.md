@@ -1,16 +1,12 @@
-# Starter App for React, TypeScript, and Tailwind
+# Web App Project Starter
 
 ## Overview
 
-This is a starter app built with [React](https://react.dev), [TypeScript](https://www.typescriptlang.org), and [Tailwind CSS](https://tailwindcss.com). It serves as a foundation for building scalable and maintainable web applications.
-
-Tooling:
+This is a project starter for building scalable and maintainable web applications with **React**, **TypeScript**, and **Tailwind**. It implements the following tools:
 
 - **Static analysis**: [TypeScript](https://www.typescriptlang.org), [ESLint](https://eslint.org), [Prettier](https://prettier.io)
 - **Testing**: [Vitest](https://vitest.dev), [Testing Library](https://testing-library.com), [Mock Service Worker](https://mswjs.io)
 - **Build process**: [Vite](https://vitejs.dev), [PostCSS](https://postcss.org)
-
-I built this app for myself to avoid repeating the same tasks over and over again when starting new side projects. Feel free to use it in its entirety or just for inspiration.
 
 ## Quick Start
 
