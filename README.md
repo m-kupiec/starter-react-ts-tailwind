@@ -198,4 +198,4 @@ Line endings are set to LF in `.gitattributes`. Files to be [ignored by Git](htt
 
 ## License
 
-This project is licensed under the [MIT License](https://github.com/m-kupiec/starter-app-react-ts-tailwind/blob/main/LICENSE.txt).
+This project is licensed under the [MIT License](https://github.com/m-kupiec/starter-react-ts-tailwind/blob/main/LICENSE.txt).
